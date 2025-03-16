@@ -10,6 +10,6 @@ if os.path.isfile(env_file_path):
                 continue
             
             key, value = line.strip().split('=', 1)
-            env.Append(CPPDEFINES=[(key, value)])
+            env.Append(CPPDEFINES=[(key, env.StringifyMacro(value))])
 
 # print('CPPDEFINES: ', env['CPPDEFINES'])
