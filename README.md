@@ -4,7 +4,7 @@ This library performs constant definitions by .env files in PlatformIO projects.
 
 ## Installation
 
-Yo can do something like this. Edit platformio.ini and add:
+Yo can do something like this. Edit `platformio.ini` and add:
 
 ```ini
 lib_deps =
