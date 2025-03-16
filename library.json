@@ -1,6 +1,24 @@
 {
     "name": "PioDotEnv",
     "version": "0.0.1",
+    "description": "Using .env file in PlatformIO projects",
+    "keywords": "configuration",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/enkatsu/PioDotEnv.git"
+    },
+    "authors": [
+        {
+            "name": "Katsuya Endoh",
+            "email": "studio@enkatsu.org",
+            "url": "https://www.enkatsu.org/",
+            "maintainer": true
+        }
+    ],
+    "license": "MIT",
+    "homepage": "https://github.com/enkatsu/PioDotEnv",
+    "frameworks": "*",
+    "platforms": "*",
     "build": {
         "extraScript": "extra_script.py"
     }
