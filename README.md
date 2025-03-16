@@ -8,7 +8,7 @@ Yo can do something like this. Edit `platformio.ini` and add:
 
 ```ini
 lib_deps =
-    https://github.com/enkatsu/PioDotEnv.git
+    enkatsu/PioDotEnv@^0.0.1
 ```
 
 ## Usage
