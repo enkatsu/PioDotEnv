@@ -27,6 +27,13 @@ WIFI_PASS=YOUR_WIFI_PASS
 
 void setup() {
     WiFi.begin(DEF_TO_STR(WIFI_SSID), DEF_TO_STR(WIFI_PASS));
+    Serial.printf("SSID: %s", DEF_TO_STR(WIFI_SSID));
+    while (WiFi.status() != WL_CONNECTED) {
+        Serial.print(".");
+        delay(500);
+    }
+    Serial.println();
+    Serial.printf("IP Address: %s", WiFi.localIP().toString());
 }
 
 void loop() {
