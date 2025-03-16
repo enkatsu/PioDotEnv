@@ -17,6 +17,7 @@ WIFI_PASS=YOUR_WIFI_PASS
 #include <PioDotEnv.h>
 
 void setup() {
+    Serial.begin(115200);
     WiFi.begin(DEF_TO_STR(WIFI_SSID), DEF_TO_STR(WIFI_PASS));
     Serial.printf("SSID: %s", DEF_TO_STR(WIFI_SSID));
     while (WiFi.status() != WL_CONNECTED) {
