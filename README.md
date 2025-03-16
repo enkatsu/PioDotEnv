@@ -26,7 +26,7 @@ WIFI_PASS=YOUR_WIFI_PASS
 #include <PioDotEnv.h>
 
 void setup() {
-    WiFi.begin(DEF_TO_STRING(WIFI_SSID), DEF_TO_STRING(WIFI_PASS));
+    WiFi.begin(DEF_TO_STR(WIFI_SSID), DEF_TO_STR(WIFI_PASS));
 }
 
 void loop() {
